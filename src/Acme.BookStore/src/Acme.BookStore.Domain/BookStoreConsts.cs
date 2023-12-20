@@ -6,3 +6,4 @@ public static class BookStoreConsts
 
     public const string DbSchema = null;
 }
+    
