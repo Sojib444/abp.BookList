@@ -81,7 +81,7 @@ public class BookStoreDbContext :
 
         builder.Entity<Book>(e =>
         {
-            e.ToTable(BookStoreConsts.DbTablePrefix + "Books", BookStoreConsts.DbSchema); // It maps database with our model
+            e.ToTable(BookStoreConsts.DbTablePrefix + "Books", BookStoreConsts.DbSchema); // It maps database table schema with our model
             e.ConfigureByConvention(); //Auto configuration for the base class Properties
             e.Property(x => x.Name).IsRequired().HasMaxLength(128); // specific condition
         });
